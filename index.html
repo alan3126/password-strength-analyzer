@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Password Strength Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="title-icon">
+    🔐
+</div>
+
+<h1>Password Strength Analyzer</h1>
+            <p class="description">
+                Enter a password to check its strength and get suggestions
+                for making it stronger.
+            </p>
+
+            <!-- Password Input -->
+            <div class="input-section">
+
+                <label for="password">Enter Password</label>
+
+               <div class="password-box">
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+    >
+
+    <button id="copyPassword" type="button">
+        📋
+    </button>
+
+    <button id="togglePassword" type="button">
+        👁
+    </button>
+
+</div>
+
+            </div>
+
+            <!-- Strength -->
+            <div class="strength-section">
+
+                <div class="strength-header">
+                    <span>Password Strength</span>
+                    <span id="strengthText">Enter password</span>
+                </div>
+
+                <div class="progress-container">
+                    <div id="progressBar"></div>
+                </div>
+
+                <p id="scoreText">Score: 0/6</p>
+
+            </div>
+
+            <!-- Requirements -->
+            <div class="requirements">
+
+                <h2>Password Requirements</h2>
+
+                <p id="lengthCheck">○ At least 8 characters</p>
+
+                <p id="longLengthCheck">○ At least 12 characters</p>
+
+                <p id="lowercaseCheck">○ Contains lowercase letter</p>
+
+                <p id="uppercaseCheck">○ Contains uppercase letter</p>
+
+                <p id="numberCheck">○ Contains a number</p>
+
+                <p id="specialCheck">○ Contains special character</p>
+
+            </div>
+
+            <!-- Suggestions -->
+            <div class="suggestions">
+
+                <h2>Suggestions</h2>
+
+                <ul id="suggestionList">
+                    <li>Enter a password to receive suggestions.</li>
+                </ul>
+
+            </div>
+
+            <!-- Generate Password -->
+            <button id="generatePassword" class="generate-button">
+                Generate Strong Password
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
