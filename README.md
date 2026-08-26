@@ -62,6 +62,19 @@ Password-Strength-Analyzer/
 ├── .gitignore
 │
 └── screenshots/
+## Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home.png)
+
+### Weak Password
+
+![Weak Password](screenshots/weak-password.png)
+
+### Strong Password
+
+![Strong Password](screenshots/strong-password.png)
 - - - - - - - - - 
 ## Author
 
